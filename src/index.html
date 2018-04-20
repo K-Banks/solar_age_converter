@@ -3,5 +3,34 @@
   <title>Solar Age Converter</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Solar Age Converter</h1>
+    <form id="userSubmit">
+      <div class="form-group">
+        <label for="userName">Please enter your name:</label>
+        <input type="text" id="userName" value="">
+      </div>
+      <div class="form-group">
+        <label for="userBirth">Please enter your birthdate below.</label>
+        <input type="number" id="userYear" placeholder="Year (ex: 1997)" value="">
+        <select class="" id="userMonth">
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+        <input type="number" id="userDay" placeholder="Day (ex: 4)" value="">
+    </div>
+    <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
