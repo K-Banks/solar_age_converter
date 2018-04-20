@@ -40,6 +40,21 @@ class Age {
     return planetAge;
   }
 
+  remainingCalculator(earthAgeSeconds, lifeExpectancy) {
+    const conversions = [1, 0.24, 0.62, 1.88, 11.86];
+    let returnArray = [];
+    let remainingLife = lifeExpectancy - earthAgeSeconds;
+    conversions.forEach(function(conversion){
+      let planetRemainingLife = 0;
+      planetRemainingLife = remainingLife / conversion;
+      planetRemainingLife = (planetRemainingLife / 60 / 60 / 24 / 365);
+      planetRemainingLife = planetRemainingLife.toFixed(2);
+      planetRemainingLife = parseFloat(planetRemainingLife);
+      returnArray.push(planetRemainingLife);
+    });
+    return returnArray;
+  }
+
 }
 
 export {Age};
