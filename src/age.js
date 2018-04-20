@@ -13,6 +13,15 @@ class Age {
     return datesDifference;
   }
 
+  mercuryDate(earthAge) {
+    const mercuryConversionFactor = 0.24;
+    let mercuryAge = earthAge * mercuryConversionFactor;
+    mercuryAge = (mercuryAge / 60 / 60 / 24 / 365);
+    mercuryAge = mercuryAge.toFixed(2);
+    mercuryAge = parseFloat(mercuryAge);
+    return mercuryAge;
+  }
+
 }
 
 export {Age};

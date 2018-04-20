@@ -17,7 +17,8 @@ describe('Conversion of Earth age to other relative ages', function() {
 
   it('should return age in Mercury solar years', function() {
     const userBirth = new Date(1994, 3, 20);
-    expect(ageCaller.mercuryDate(currentDate, userBirth)).toEqual(5.76);
+    let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
+    expect(ageCaller.mercuryDate(earthAgeSeconds)).toEqual(5.76);
   });
 
 });
