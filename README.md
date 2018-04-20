@@ -16,7 +16,7 @@ _This application takes the user's age and converts it to the relative age the u
 | Return age in Mercury solar years | "Earth birthdate: April 20, 1994" | "Mercury age(years):" 5.76 |
 | Return age in Venus solar years | "Earth birthdate: April 20, 1994" | "Venus age(years):" 14.89 |
 | Return age in Mars solar years | "Earth birthdate: April 20, 1994" | "Mars age(years):" 45.15 |
-| Return age in Jupiter solar years | "Earth birthdate: April 20, 1994" | "Jupiter age(years):" 284.64 |
+| Return age in Jupiter solar years | "Earth birthdate: April 20, 1994" | "Jupiter age(years):" 284.83 |
 | Determine life remaining relative to each planet | "Remaining life expected on Earth(years): 46" | "Remaining life expected on Mars(years): " 86.48, "Remaining life expected on Venus(years): " 28.52 , ect. |
 | If age is beyond predicted life expectancy, return years lived past expectancy | "Earth age(years): 101" | "Years lived past life expectancy: " 31 |
 
