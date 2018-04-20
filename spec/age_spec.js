@@ -33,7 +33,7 @@ describe('Conversion of Earth age to other relative ages', function() {
     const userBirth = new Date(1994, 3, 20);
     const convertName = 'Mars';
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(45.12);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(45.15);
   });
 
 });
