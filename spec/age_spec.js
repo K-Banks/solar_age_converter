@@ -48,7 +48,7 @@ describe('Conversion of Earth age to other relative ages', function() {
     let lifeExpectancy = 70;
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
     lifeExpectancy = ageCaller.secondConverter(lifeExpectancy);
-    expect(ageCaller.remainingCalculator(earthAgeSeconds, lifeExpectancy)).toEqual([45.98, 191.6, 74.17, 24.46, 3.88])
+    expect(ageCaller.remainingCalculator(earthAgeSeconds, lifeExpectancy)).toEqual([191.6, 74.17, 45.98, 24.46, 3.88])
   });
 
   it('should return the years lived past life expectancy for each planet if user age is beyond life expectancy', function(){
@@ -56,7 +56,7 @@ describe('Conversion of Earth age to other relative ages', function() {
     let lifeExpectancy = 70;
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
     lifeExpectancy = ageCaller.secondConverter(lifeExpectancy);
-    expect(ageCaller.remainingCalculator(earthAgeSeconds, lifeExpectancy)).toEqual([14.06, 58.57, 22.67, 7.48, 1.19])
+    expect(ageCaller.remainingCalculator(earthAgeSeconds, lifeExpectancy)).toEqual([58.57, 22.67, 14.06, 7.48, 1.19])
   });
 
 });

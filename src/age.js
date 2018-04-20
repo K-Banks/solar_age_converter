@@ -41,7 +41,7 @@ class Age {
   }
 
   remainingCalculator(earthAgeSeconds, lifeExpectancy) {
-    const conversions = [1, 0.24, 0.62, 1.88, 11.86];
+    const conversions = [0.24, 0.62, 1, 1.88, 11.86];
     let returnArray = [];
     let remainingLife = lifeExpectancy - earthAgeSeconds;
     if (remainingLife > 0) {
@@ -52,6 +52,7 @@ class Age {
         planetRemainingLife = planetRemainingLife.toFixed(2);
         planetRemainingLife = parseFloat(planetRemainingLife);
         returnArray.push(planetRemainingLife);
+        console.log(returnArray);
       });
     } else if (remainingLife <= 0) {
       conversions.forEach(function(conversion){
