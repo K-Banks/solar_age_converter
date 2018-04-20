@@ -29,13 +29,11 @@ describe('Conversion of Earth age to other relative ages', function() {
     expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(14.89);
   });
 
+  it('should return age in Mars solar years', function() {
+    const userBirth = new Date(1994, 3, 20);
+    const convertName = 'Mars';
+    let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(45.12);
+  });
 
 });
-
-
-// it('should return age in Mars solar years', function() {
-//   const userBirth = new Date(1994, 3, 20);
-//   const marsConversionFactor = 1.88;
-//   let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-//   expect(ageCaller.planetaryAge(earthAgeSeconds, marsConversionFactor)).toEqual(14.89);
-// });
