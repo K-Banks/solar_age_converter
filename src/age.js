@@ -13,11 +13,24 @@ class Age {
     return datesDifference;
   }
 
-  planetaryAge(earthAge, conversionFactor) {
-    let planetAge = earthAge * conversionFactor;
+  planetaryAge(earthAge, convertName) {
+    const planets = ['mercury', 'venus']
+    let conversionFactor = 0;
+    let planetAge = 0;
+
+    convertName = convertName.toLowerCase();
+
+    if (convertName === planets[0]) {
+      conversionFactor = 0.24;
+    } else if (convertName === planets[1]) {
+      conversionFactor = 0.62;
+    }
+
+    planetAge = earthAge * conversionFactor;
     planetAge = (planetAge / 60 / 60 / 24 / 365);
     planetAge = planetAge.toFixed(2);
     planetAge = parseFloat(planetAge);
+
     return planetAge;
   }
 
