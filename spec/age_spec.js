@@ -17,14 +17,16 @@ describe('Conversion of Earth age to other relative ages', function() {
 
   it('should return age in Mercury solar years', function() {
     const userBirth = new Date(1994, 3, 20);
+    const mercuryConversionFactor = 0.24;
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.mercuryDate(earthAgeSeconds)).toEqual(5.76);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, mercuryConversionFactor)).toEqual(5.76);
   });
 
   it('should return age in Venus solar years', function() {
     const userBirth = new Date(1994, 3, 20);
+    const venusConversionFactor = 0.62;
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.venusDate(earthAgeSeconds)).toEqual(14.89);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, venusConversionFactor)).toEqual(14.89);
   });
 
 });

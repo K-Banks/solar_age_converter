@@ -13,22 +13,12 @@ class Age {
     return datesDifference;
   }
 
-  mercuryDate(earthAge) {
-    const mercuryConversionFactor = 0.24;
-    let mercuryAge = earthAge * mercuryConversionFactor;
-    mercuryAge = (mercuryAge / 60 / 60 / 24 / 365);
-    mercuryAge = mercuryAge.toFixed(2);
-    mercuryAge = parseFloat(mercuryAge);
-    return mercuryAge;
-  }
-
-  venusDate(earthAge) {
-    const venusConversionFactor = 0.62;
-    let venusAge = earthAge * venusConversionFactor;
-    venusAge = (venusAge / 60 / 60 / 24 / 365);
-    venusAge = venusAge.toFixed(2);
-    venusAge = parseFloat(venusAge);
-    return venusAge;
+  planetaryAge(earthAge, conversionFactor) {
+    let planetAge = earthAge * conversionFactor;
+    planetAge = (planetAge / 60 / 60 / 24 / 365);
+    planetAge = planetAge.toFixed(2);
+    planetAge = parseFloat(planetAge);
+    return planetAge;
   }
 
 }
