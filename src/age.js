@@ -22,6 +22,15 @@ class Age {
     return mercuryAge;
   }
 
+  venusDate(earthAge) {
+    const venusConversionFactor = 0.62;
+    let venusAge = earthAge * venusConversionFactor;
+    venusAge = (venusAge / 60 / 60 / 24 / 365);
+    venusAge = venusAge.toFixed(2);
+    venusAge = parseFloat(venusAge);
+    return venusAge;
+  }
+
 }
 
 export {Age};
