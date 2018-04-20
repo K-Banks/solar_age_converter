@@ -43,4 +43,10 @@ describe('Conversion of Earth age to other relative ages', function() {
     expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(2.02);
   });
 
+  it('should return an estimate of remaining life expectancy for each planet', function() {
+    const userBirth = new Date(1994, 3, 20);
+    const lifeExpectancy = 70;
+    expect(ageCaller.remainingCalculator(userBirth, lifeExpectancy)).toEqual([46, 191.66, 74.19, 24.46, 3.87])
+  });
+
 });
