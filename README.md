@@ -14,8 +14,8 @@ _This application takes the user's age and converts it to the relative age the u
 | Take current age and convert to seconds | "Current age in years:" 24 | 757366848 "seconds" |
 | Determine difference between 2 dates in seconds | "4/20/18 and 4/4/15" | 96076800 "seconds" |
 | Return age in Mercury solar years | "Earth birthdate: April 20, 1994" | "Mercury age(years):" 5.76 |
-| Return age in Venus solar years | "Earth birthdate: April 20, 1994" | "Venus age(years):" 14.88 |
-| Return age in Mars solar years | "Earth birthdate: April 20, 1994" | "Mars age(years):" 45.12 |
+| Return age in Venus solar years | "Earth birthdate: April 20, 1994" | "Venus age(years):" 14.89 |
+| Return age in Mars solar years | "Earth birthdate: April 20, 1994" | "Mars age(years):" 45.15 |
 | Return age in Jupiter solar years | "Earth birthdate: April 20, 1994" | "Jupiter age(years):" 284.64 |
 | Determine life remaining relative to each planet | "Remaining life expected on Earth(years): 46" | "Remaining life expected on Mars(years): " 86.48, "Remaining life expected on Venus(years): " 28.52 , ect. |
 | If age is beyond predicted life expectancy, return years lived past expectancy | "Earth age(years): 101" | "Years lived past life expectancy: " 31 |
