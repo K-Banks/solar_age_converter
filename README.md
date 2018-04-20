@@ -26,13 +26,11 @@ _This application takes the user's age and converts it to the relative age the u
 * _Clone the repository_
 * _Open the folder in the terminal_
 * _Run 'npm install' to retrieve all required packages_
-* _FIX THIS PLEASE_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Run 'npm start' to view site on a local development server_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs._
 
 ## Support and contact details
 
