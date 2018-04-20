@@ -14,7 +14,7 @@ class Age {
   }
 
   planetaryAge(earthAge, convertName) {
-    const planets = ['mercury', 'venus', 'mars'];
+    const planets = ['mercury', 'venus', 'mars', 'jupiter'];
     let conversionFactor = 0;
     let planetAge = 0;
 
@@ -26,6 +26,10 @@ class Age {
       conversionFactor = 0.62;
     } else if (convertName === planets[2]) {
       conversionFactor = 1.88;
+    } else if (convertName === planets[3]) {
+      conversionFactor = 11.86;
+    } else {
+      conversionFactor = 1;
     }
 
     planetAge = earthAge * conversionFactor;
