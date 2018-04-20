@@ -11,7 +11,7 @@ _This application takes the user's age and converts it to the relative age the u
 ## Specifications
 | Program Behavior | Input | Output |
 |----------------|------|------|
-| Take age and convert to seconds | "24 years" | 757366848 "seconds" |
+| Take current age and convert to seconds | "Current age in years:" 24 | 757366848 "seconds" |
 | Determine difference between 2 dates in seconds | "4/20/18 and 4/4/15" | 96076800 "seconds" |
 | Return age in Mercury solar years | "Earth age(years): 24 years" | "Mercury age(years):" 5.76 |
 | Return age in Venus solar years | "Earth age(years): 24 years" | "Venus age(years):" 14.88 |
