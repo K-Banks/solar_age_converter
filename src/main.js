@@ -7,10 +7,12 @@ import {Age} from './age.js';
 $(document).ready(function() {
   $("form#userSubmit").submit(function(event) {
     event.preventDefault();
+    let currentDate = new Date(Date.now());
     let userName = $("input#userName").val();
     let userYear = $("input#userYear").val();
     let userMonth = $("select#userMonth").val();
     let userDay = $("input#userDay").val();
     let newUser = new User(userName, userYear, userMonth, userDay);
+    
   });
 });

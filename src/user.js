@@ -5,6 +5,7 @@ class User {
     this.birthYear = birthYear;
     this.birthMonth = birthMonth;
     this.birthDay = birthDay;
+    this.date = new Date(this.birthYear, this.birthMonth, this.birthDay);
   }
 
 }
