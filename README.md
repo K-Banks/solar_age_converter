@@ -1,20 +1,32 @@
-# _{Application Name}_
+# _Solar Age Converter_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This application will convert user's age to the solar calendar of other planets, April 20, 2018_
 
-#### By _**{List of contributors}**_
+#### By _**Kayl Eubanks**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application takes the user's age and converts it to the relative age the user would be on another planet._
+
+## Specifications
+| Program Behavior | Input | Output |
+|----------------|------|------|
+| Take age and convert to seconds | "24 years" | 757366848 "seconds" |
+| Determine difference between 2 dates in seconds | "4/20/18 and 4/4/15" | 96076800 "seconds" |
+| Return age in Mercury solar years | "Earth age(years): 24 years" | "Mercury age(years):" 5.76 |
+| Return age in Venus solar years | "Earth age(years): 24 years" | "Venus age(years):" 14.88 |
+| Return age in Mars solar years | "Earth age(years): 24 years" | "Mars age(years):" 45.12 |
+| Return age in Jupiter solar years | "Earth age(years): 24 years" | "Jupiter age(years):" 284.64 |
+| Determine life remaining relative to each planet | "Remaining life expected on Earth(years): 46" | "Remaining life expected on Mars(years): " 86.48, "Remaining life expected on Venus(years): " 28.52 , ect. |
+| If age is beyond predicted life expectancy, return years lived past expectancy | "Earth age(years): 101" | "Years lived past life expectancy: " 31 |
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Navigate to https://github.com/K-Banks/solar_age_converter in a web browser_
+* _Clone the repository_
+* _Open the folder in the terminal_
+* _Run 'npm install' to retrieve all required packages_
+* _FIX THIS PLEASE_
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
@@ -24,14 +36,15 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_To report any bugs, send suggestions, or ask questions, please contact author at:_
+_kayleubanks@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_JavaScript, Babel, Node, Karma, Jasmine, ESlint, UglifyJS, Webpack and associated packages._
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software is licensed under the MIT license.*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**s
+Copyright (c) 2018 **Kayl Eubanks**
