@@ -19,28 +19,28 @@ describe('Conversion of Earth age to other relative ages', function() {
     const userBirth = new Date(1994, 3, 20);
     const convertName = 'Mercury';
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(5.76);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(100.07);
   });
 
   it('should return age in Venus solar years', function() {
     const userBirth = new Date(1994, 3, 20);
     const convertName = 'Venus';
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(14.89);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(38.74);
   });
 
   it('should return age in Mars solar years', function() {
     const userBirth = new Date(1994, 3, 20);
     const convertName = 'Mars';
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(45.15);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(12.77);
   });
 
   it('should return age in Jupiter solar years', function() {
     const userBirth = new Date(1994, 3, 20);
     const convertName = 'Jupiter';
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
-    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(284.83);
+    expect(ageCaller.planetaryAge(earthAgeSeconds, convertName)).toEqual(2.02);
   });
 
 });

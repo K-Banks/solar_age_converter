@@ -32,7 +32,7 @@ class Age {
       conversionFactor = 1;
     }
 
-    planetAge = earthAge * conversionFactor;
+    planetAge = earthAge / conversionFactor;
     planetAge = (planetAge / 60 / 60 / 24 / 365);
     planetAge = planetAge.toFixed(2);
     planetAge = parseFloat(planetAge);
