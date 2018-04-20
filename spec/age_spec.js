@@ -3,6 +3,7 @@ import {Age} from "./../src/age.js";
 describe('Conversion of Earth age to other relative ages', function() {
 
   const ageCaller = new Age;
+  const currentDate = new Date(2018, 3, 20);
 
   it('should convert a provided age in years to seconds', function(){
     const userAge = 24;
@@ -10,13 +11,13 @@ describe('Conversion of Earth age to other relative ages', function() {
   });
 
   it('should determine difference in seconds between two dates', function(){
-    const currentDate = new Date(2018, 3, 20);
     const userBirth = new Date(2015, 3, 20);
     expect(ageCaller.dateDifference(currentDate, userBirth)).toEqual(94694400);
   });
 
   it('should return age in Mercury solar years', function() {
-
+    const userBirth = new Date(1994, 3, 20);
+    expect(ageCaller.mercuryDate(currentDate, userBirth)).toEqual(5.76);
   });
 
 });
