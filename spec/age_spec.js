@@ -56,7 +56,7 @@ describe('Conversion of Earth age to other relative ages', function() {
     let lifeExpectancy = 70;
     let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
     lifeExpectancy = ageCaller.secondConverter(lifeExpectancy);
-    expect(ageCaller.remainingCalculator(earthAgeSeconds, lifeExpectancy)).toEqual([14.05, 58.57, 22.67, 7.47, 1.18])
+    expect(ageCaller.remainingCalculator(earthAgeSeconds, lifeExpectancy)).toEqual([14.06, 58.57, 22.67, 7.48, 1.19])
   });
 
 });

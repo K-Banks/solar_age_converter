@@ -44,14 +44,28 @@ class Age {
     const conversions = [1, 0.24, 0.62, 1.88, 11.86];
     let returnArray = [];
     let remainingLife = lifeExpectancy - earthAgeSeconds;
-    conversions.forEach(function(conversion){
-      let planetRemainingLife = 0;
-      planetRemainingLife = remainingLife / conversion;
-      planetRemainingLife = (planetRemainingLife / 60 / 60 / 24 / 365);
-      planetRemainingLife = planetRemainingLife.toFixed(2);
-      planetRemainingLife = parseFloat(planetRemainingLife);
-      returnArray.push(planetRemainingLife);
-    });
+    if (remainingLife > 0) {
+      conversions.forEach(function(conversion){
+        let planetRemainingLife = 0;
+        planetRemainingLife = remainingLife / conversion;
+        planetRemainingLife = (planetRemainingLife / 60 / 60 / 24 / 365);
+        planetRemainingLife = planetRemainingLife.toFixed(2);
+        planetRemainingLife = parseFloat(planetRemainingLife);
+        returnArray.push(planetRemainingLife);
+      });
+    } else if (remainingLife <= 0) {
+      conversions.forEach(function(conversion){
+        let planetRemainingLife = 0;
+        planetRemainingLife = remainingLife / conversion;
+        planetRemainingLife = (planetRemainingLife / 60 / 60 / 24 / 365);
+        planetRemainingLife = planetRemainingLife.toFixed(2);
+        planetRemainingLife = parseFloat(planetRemainingLife);
+        planetRemainingLife = planetRemainingLife * -1;
+        returnArray.push(planetRemainingLife);
+      });
+    } else {
+      console.log('Remaining life error alert');
+    }
     return returnArray;
   }
 
