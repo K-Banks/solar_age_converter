@@ -21,6 +21,12 @@ describe('Conversion of Earth age to other relative ages', function() {
     expect(ageCaller.mercuryDate(earthAgeSeconds)).toEqual(5.76);
   });
 
+  it('should return age in Venus solar years', function() {
+    const userBirth = new Date(1994, 3, 20);
+    let earthAgeSeconds = ageCaller.dateDifference(currentDate, userBirth);
+    expect(ageCaller.venusDate(earthAgeSeconds)).toEqual(14.88);
+  });
+
 });
 
 
